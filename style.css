@@ -1,8 +1,17 @@
+:root {
+  --width: 60vw;
+}
+
 .container {
-  width: 60vw;
+  width: var(--width);
   margin: auto;
+  padding: 0.5rem 0;
 }
 
 .error {
   color: red;
+}
+
+details[open] p {
+  width: var(--width);
 }
