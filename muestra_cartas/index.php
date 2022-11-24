@@ -30,11 +30,11 @@
     {
       echo <<<FORM
       <form method="POST">
-        <p>Elije un número de cartas y un palo</p>
+        <p>Elige un número de cartas y un palo</p>
 
         <label>
           Número de cartas:
-          <input type="number" name="number" id="number" min="3" max="12" />
+          <input type="number" name="number" id="number" min="3" max="12" required />
         </label>
 
         <select name="type">

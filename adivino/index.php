@@ -30,7 +30,7 @@
           } else {
             print_form(random_number: $correct_number);
 
-            $error_msg;
+            $error_msg = '';
 
             if ($n > $correct_number) {
               $error_msg = "$n es demasiado grande";
@@ -52,7 +52,7 @@
       print_form(random_number: rand(1, 100));
     }
 
-    function print_form($random_number)
+    function print_form($random_number): void
     {
       echo <<<FORM
           <form method="POST">
@@ -61,9 +61,9 @@
               Introduce un número entre 1 y 100:
               <input type="number" name="number" id="number" min="1" max="100">
             </label>
-      
+
             <input type="hidden" name="random" value="$random_number">
-      
+
             <button>Comprobar número</button>
           </form>
         FORM;
